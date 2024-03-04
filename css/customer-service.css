@@ -1,0 +1,71 @@
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+
+.customer-service{
+    display: flex;
+}
+
+.customer-service .customer-service__right, .customer-service .customer-service__left{
+    flex: 50%;
+}
+
+.customer-service .customer-service__left img{
+    height: 100%;
+}
+
+.customer-service .customer-service__left  {
+    position: relative; /* Ana öğeyi relative olarak ayarlayın */
+}
+
+.customer-service .customer-service__left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    z-index: 1; /* Elementin arkasına yerleştirilmek için */
+}
+
+.customer-service .customer-service__right{
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    padding-left: 4rem;
+}
+
+.customer-service .customer-service__right *{
+    color: var(--light);
+}
+
+.customer-service .customer-service__right h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.customer-service .customer-service__right p{
+    font-size: 1.8rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.customer-service .customer-service__right button{
+    background-color: var(--dark);
+}
+
+
+

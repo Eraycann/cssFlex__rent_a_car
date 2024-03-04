@@ -1,0 +1,79 @@
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+
+#services .container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: #fff;
+    padding: 2rem;
+    width: 140rem;
+    height: 45rem;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#services .container .row{
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    gap: 1rem;
+}
+
+#services .container .row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url("../img/pexel2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#services .container .row:hover{
+    transform: scale(1.1);
+    padding: 0 10rem;
+}
+
+#services .container .row:hover .col {
+    transform: scale(.85); /* Hover durumunda küçültme */
+    opacity: .9; /* Hover durumunda opaklığı azaltma */
+    overflow: hid5en; /* Taşmayı gizleme */
+}
+
+#services .container .row .col:hover {
+    opacity: 1;
+    transform: scale(1.2); /* Hover durumunda büyütme */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;    z-index: 1; /* Hover durumunda diğer elemanları üstte görüntülemek için */
+}
+
+#services .container .row .col *{
+    color: var(--light);
+}
+
+#services .container .row .col i{
+    font-size: 2rem;
+    opacity: .4;
+}
+
+#services .container .row .col h2{
+    font-size: 3.5rem;
+    font-weight: 200;
+    opacity: .9;
+}
+
+#services .container .row .col p{
+    padding-bottom: 1.5rem;
+    opacity: .8;
+    font-weight: 100;
+}

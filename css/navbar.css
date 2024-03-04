@@ -1,0 +1,80 @@
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: var(--dark);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-left {
+    gap: 0.4rem;
+    display: flex;
+    align-items: center;
+    flex: 60%;
+    font-size: 700;
+}
+
+.header-left h2{
+    color: var(--white);
+    font-weight: 400;
+}
+
+.header-left h2 span{
+    font-weight: 700;
+}
+
+.header-left i{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.header-right{
+    flex: 40%; 
+}
+
+.header-right ul{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.header-right ul li{
+    padding: 0.8rem 0;
+    border-bottom: 0.2rem solid transparent;
+    transition: all .3s;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.header-right ul li:hover:not(.active){
+    border-bottom: 0.2rem solid goldenrod;
+    transform: scale(1.1) rotate(-5deg) translateX(0.5rem) translateY(-0.5rem);
+
+}
+
+.active{
+    border-bottom: 0.2rem solid goldenrod !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.header-right ul a{
+    color: var(--white);
+}
